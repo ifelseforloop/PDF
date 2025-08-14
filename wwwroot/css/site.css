@@ -4,3 +4,26 @@ body {
 .container {
     margin: 20px;
 }
+
+#fileList {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+#fileList li {
+    padding: 8px 12px;
+    margin-bottom: 4px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    cursor: move;
+}
+
+input[type="file"] {
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 6px 12px;
+    cursor: pointer;
+}
