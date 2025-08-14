@@ -1,0 +1,14 @@
+@{
+    ViewData["Title"] = "Merge PDF";
+}
+
+<h2>Merge PDF Files</h2>
+
+<form asp-action="Merge" method="post" enctype="multipart/form-data">
+    <input type="file" name="files" multiple />
+    <button type="submit">Merge</button>
+</form>
+@if(ViewBag.Message != null)
+{
+    <p>@ViewBag.Message</p>
+}
