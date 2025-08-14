@@ -4,11 +4,17 @@
 
 <h2>Merge PDF Files</h2>
 
-<form asp-action="Merge" method="post" enctype="multipart/form-data">
-    <input type="file" name="files" multiple />
+<form id="mergeForm" asp-action="Merge" method="post" enctype="multipart/form-data">
+    <input type="file" id="fileInput" multiple />
+    <p>Select files and drag to reorder them:</p>
+    <ul id="fileList"></ul>
     <button type="submit">Merge</button>
 </form>
-@if(ViewBag.Message != null)
+@if (ViewBag.Message != null)
 {
     <p>@ViewBag.Message</p>
+}
+
+@section Scripts {
+    <script src="~/js/merge.js"></script>
 }
